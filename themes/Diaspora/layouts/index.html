@@ -1,0 +1,28 @@
+{{ define "main" }}
+    {{ partial "header" . }}
+    <div id="container">
+        {{ partial "screen" . }}
+
+
+        <div class="contentX">
+            <div class="title1">
+                爱国 爱党 爱教 遵纪守法 <br>
+                维护 道教 佛教 和 民俗教派  <br>
+                在党的领导下的和谐共处
+            </div>
+
+        </div>
+
+        <div id="primary">
+            {{ partial "article_list" . }}
+        </div>
+        {{ if .Paginator.HasNext }}
+            <div id="pager"><a href="{{ .Paginator.Next.URL }}" class="more">加载更多</a></div>
+        {{ end }}
+    </div>
+    <div id="preview" >
+
+         
+
+    </div>
+{{ end }}
