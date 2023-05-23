@@ -76,6 +76,10 @@ summaryLength = 50
     link   = "/chuanjiao/"
     target = ""
 [[params.menu]]
+    name   = "缘主反馈"
+    link   = "/fankui/"
+    target = ""
+[[params.menu]]
     name   = "联系我们"
     link   = "/lianxi/"
     target = ""
